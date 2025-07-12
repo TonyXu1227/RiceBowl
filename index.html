@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>First Page Test</title>
         <style>
             img {
@@ -24,16 +26,31 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+            .center {
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                border: 2px solid teal;
+                padding: 10px;
+            }
+            .center-button {
+                margin: auto;
+            }
         </style>
     </head>
     <body>
-        <p class = "title"> Welcome to the Ricebowl!</p>
+        <h1 class = "title"> The Ricebowl</h1>
+        <h2 class = "title"> Welcome to the Ricebowl!</h2>
         <img src="images/RiceBowl.jpg">
         <p class = "heading">
             This is my website! I post blogs, some projects I worked on, as well as other things and projects I want to share with the world!
         </p>
+        <div class = "center">
         <p class = "heading">
-            My email: txu122705@gmail.com
+            My email: <a href="mailto:txu122705@gmail.com">txu122705@gmail.com</a>
         </p>
         <p class = "heading">
             <a class = "heading" href="https://www.linkedin.com/in/tony-xu-a2081a322/">
@@ -55,5 +72,7 @@
                 Blogs 
             </a>
         </p>
+        <button type="button" class = "center-button">Click Me!</button>
+        </div>
     </body>
 </html>
